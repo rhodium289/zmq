@@ -24,6 +24,6 @@ for ($request_nbr = 0; $request_nbr != 10; $request_nbr++) {
     printf ("Sending request %d…\n", $request_nbr);
     $requester->send("Hello", ZMQ::MODE_DONTWAIT);
 
-    $reply = $requester->recv();
-    printf ("Received reply %d: [%s]\n", $request_nbr, $reply);
+    //$reply = $requester->recv();
+    //printf ("Received reply %d: [%s]\n", $request_nbr, $reply);
 }
